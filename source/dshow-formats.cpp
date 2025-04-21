@@ -283,7 +283,7 @@ bool GetMediaTypeVFormat(const AM_MEDIA_TYPE &mt, VideoFormat &format)
 
 	/* raw formats */
 	if (mt.subtype == MEDIASUBTYPE_RGB24)
-		format = VideoFormat::XRGB;
+		format = VideoFormat::RGB24;
 	else if (mt.subtype == MEDIASUBTYPE_RGB32)
 		format = VideoFormat::XRGB;
 	else if (mt.subtype == MEDIASUBTYPE_ARGB32)
